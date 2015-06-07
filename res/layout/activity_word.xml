@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="床前明月光"
+            android:id="@+id/word_title" />
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+           android:padding="5dp"
+            android:text="      床前没有光，不得不开窗。开窗也不亮，眼泪流三丈。床前有月光，很像地上霜，眼看着月亮，想起了故乡床前明月光,疑是地上霜,举头看美女,低头思姑娘"
+            android:id="@+id/word_content" />
+
+</LinearLayout>
+</ScrollView>

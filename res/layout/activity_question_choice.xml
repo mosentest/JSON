@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+<ScrollView android:layout_width="match_parent" android:layout_height="0dp"  android:layout_weight="1">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+        <TextView android:id="@+id/question_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="18sp" android:padding="5dp" android:textColor="@color/black" android:text="题目内容：请问子琪帅不帅？"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="题目选项如下：" android:textSize="18sp" android:padding="5dp" android:textColor="@color/black" />
+        <TextView android:id="@+id/question_option_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="题目答案是：A" android:textSize="18sp" android:padding="5dp" android:textColor="@color/red" />
+
+
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question_option_group"
+                >
+            <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="选项一"
+                    android:checked="true"
+                    android:textColor="@color/black"
+                    android:id="@+id/question_option_a"/>
+            <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="选项二"
+                    android:id="@+id/question_option_b"/>
+            <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="选项三"
+                    android:id="@+id/question_option_c"/>
+            <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="选项四"
+                    android:id="@+id/question_option_d"/>
+        </RadioGroup>
+        <!--<ListView-->
+                <!--android:id="@+id/question_options"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+        <!--</ListView>-->
+    </LinearLayout>
+</ScrollView>
+    <Button android:id="@+id/question_add_error" android:layout_width="match_parent" android:layout_height="wrap_content"  android:text="加入错题"/>
+    <Button android:id="@+id/question_add_fav" android:layout_width="match_parent" android:layout_height="wrap_content"  android:text="收藏该题"/>
+    <Button android:id="@+id/question_tip" android:layout_width="match_parent" android:text="提示答案" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/question_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="下一题"/>
+</LinearLayout>

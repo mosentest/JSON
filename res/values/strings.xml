@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">每天学习一点</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello">Hello World</string>
+    
+    
+<string name="mon">周一</string>
+<string name="tue">周二</string>
+<string name="wed">周三</string>
+<string name="thu">周四</string>
+<string name="fri">周五</string>
+<string name="sat">周六</string>
+<string name="sun">周日</string>
+<string name="c0">第一节</string>
+<string name="c1">第二节</string>
+<string name="c2">第三节</string>
+<string name="c3">第四节</string>
+<string name="c4">第五节</string>
+<string name="group_insert">添加课程</string>
+<string name="dialog_class">新增课程:</string>
+<string name="dialog_address">课室:</string>
+<string name="ok">确认</string>
+<string name="cancel">取消</string>
+<string name="none">空</string>
+<string name="del">删除</string>
+<string name="insert_suc">已添加，后退以刷新页面</string>
+<string name="insert_fail">添加课程失败\n\n提示：\n每节课中的课程名不能重复</string>
+<string name="insert_none">课程名不能为空</string>
+<string name="del_suc">已删除,后退以刷新页面</string>
+<string name="del_fail">删除失败</string>
+<string name="helpvalue">帮助</string>
+<string name="about">关于</string>
+<string name="add">添加</string>
+<string name="help_text">在课程页面长按 某课节 会弹出添加课程菜单。\n长按 已有课程 会弹出删除课程菜单。</string>
+<string name="about_text">课程表是每个学生都需要用到的……</string>
+<string name="dialog_teacher">任课老师:</string>
+<string name="exit">退出</string>
+  <string name="zhenzhi">每天学一点</string>  
+   <string name="help">核心功能介绍：
+        \n1,操作记录功能：程序打开运行和点击便签列表的操作，会被记录在BianQian/attr/bianQianRecording文件中，用于用户查看。用户可以通过此功能，可以知道某个人在什么时间打开了该应用，什么时间点击查看了哪个便签。作为侦察监控。
+        \n2,暗拍功能：程序打开时，会启动前置摄像头没有声息地暗地里拍下操作者的照片存放在BianQian/Photo文件夹下，并以打开应用操作的时间为图片名，用户可以通过此功能知道谁打开此应用。为了防止占据大量空间，该文件夹存放的大小超过20M将自动清空。此功能需要前置摄像头，没有前置摄像头的手机，将跳过此功能。
+		\n3,隐藏显示便签及设密功能：请用户在各视图下点击Menu键进行体验。默认密码hyf
+		\n4,自动导入功能：用户可以在BianQian目录下放置文件用于添加到便签列表中。程序运行，会自动检测该目录下是否有新便签需要导入，有的话将会自动导入到数据库中，便签默认不隐藏。
+		\n5,新建，编辑，保存，删除基础功能。
+		\n6,记录文件bianQianRecording删除后，该帮助文件将再次生成。
+    </string>
+   <color name="darkgray">#808080</color>
+  <color name="blue">#0000FF</color>
+  <color name="lightred">#90FF0000</color>
+  <color name="lightgray">#90505050</color>
+   <color name="violet">#EE82EE</color><!--紫罗兰色 -->
+   <color name="lavender">#E6E6FA</color><!--淡紫色 -->
+   <color name="seagreen">#2E8B57</color><!--海绿色 -->
+   <color name="lavenderblush">#FFF0F5</color><!--淡紫红 -->
+    <color name="papayawhip">#FFEFD5</color><!--番木色 -->
+    <color name="white">#ffffff</color>
+    <color name="gray">#eeeeee</color>
+    <color name="black">#000000</color>
+    <color name="orange">#fff8761f</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="dark_gray">#ff696161</color>
+    <color name="red">#ffc60001</color>
+    
+    
+    
+<string name="everyday">每天学一点</string>
+<string name="translate">微翻译词典</string>
+<string name="className">做题测试</string>
+<string name="notebook">辅助工具</string>
+
+   
+
+    <!-- main activity -->
+    <string name="main_title">做题测试</string>
+    <string name="study">知识手册</string>
+    <string name="exam_library">考试题库</string>
+    <string name="favourite">收藏集锦</string>
+    <string name="exam_error">错题回顾</string>
+    <string name="setting">设置</string>
+    <string name="about_us">关于我们</string>
+    
+    <!-- exam activity -->
+    <string name="exam_title">科目选择</string>
+    <string name="wenjuan_title">试卷选择</string>
+    <string name="error_title">错题选择</string>
+    <string name="fav_title">收藏选择</string>
+    <string name="word_title">知识手册</string>
+    <string name="exam_fill">填空</string>
+    <string name="exam_choice">选择</string>
+    <string name="exam_judge">判断</string>
+    <string name="exam_problem">问答</string>
+    <string name="setting_title">设置</string>
+    
+    <!-- study activity -->
+    <string name="study_title">知识手册</string>
+    
+    <!-- 下拉加载 更多-->
+    <!-- view -->
+    <string name="pull_to_refresh_pull_label">下拉刷新&#8230;</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_release_label">释放立即刷新&#8230;</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <!-- listView -->
+    <string name="pull_to_refresh_tap_label">获取更多&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新&#8230;</string>
+    <string name="pull_to_refresh_tap_done">加载完毕</string>
+    
+    <string name="no_data">暂无数据，请检查您的网络</string>
+    <string name="replay_data">重新加载</string>
+
+</resources>

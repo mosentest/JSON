@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtFillNum"
+        android:layout_width="90dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/top_bar"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="第1题"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <ScrollView
+        android:id="@+id/svView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/txtFillNum"
+        android:layout_marginBottom="60dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtFillContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/answer_bg"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:singleLine="false"
+                android:text="题目内容题目内容题目内容题目内容题目内容题目内容题目内容题目内容"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/choice_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtFillContent"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/answer_bg"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:tag="A"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btnB"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/answer_bg"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:tag="B"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btnC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/answer_bg"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:tag="C"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btnD"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/answer_bg"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:tag="D"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtFillAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choice_lay"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:singleLine="false"
+                android:text="B"
+                android:textColor="@color/red"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/btnFillAdd"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/top_bar"
+            android:text="添加收藏"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnFillLook"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/top_bar"
+            android:text="查看答案"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnLast"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/top_bar"
+            android:text="上一题"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/top_bar"
+            android:text="下一题"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>

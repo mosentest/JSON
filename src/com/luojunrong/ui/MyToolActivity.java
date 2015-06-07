@@ -1,0 +1,81 @@
+/**
+ * 
+ */
+package com.luojunrong.ui;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.app.ListActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import com.luojunrong.R;
+/**
+ * @author wzj
+ * 
+ */
+public class MyToolActivity extends ListActivity {
+
+
+	// private List<String> data = new ArrayList<String>();
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		SimpleAdapter adapter = new SimpleAdapter(this,getData(),R.layout.vlist,
+				new String[]{"title","info","img"},
+				new int[]{R.id.title,R.id.info,R.id.img});
+		setListAdapter(adapter);
+	}
+
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		// TODO Auto-generated method stub
+		super.onListItemClick(l, v, position, id);
+		
+		switch (position) {
+		
+			
+		case 0:
+			Intent intent = new Intent(MyToolActivity.this,cn.hyf.notepad.FileListActivity.class);
+			startActivity(intent);
+			
+			
+			break;
+		case 1:
+			Intent intent2 = new Intent(MyToolActivity.this, hyuuhit.Curriculum.Curriculum.class);
+			startActivity(intent2);
+			
+			
+			break;
+		default:
+			break;
+		}
+		
+		
+	}
+
+	private List<Map<String, Object>> getData() {
+		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("title", "备忘录");
+		map.put("info", "");
+		map.put("img", R.drawable.zhenzhi);
+		list.add(map);
+		
+		map = new HashMap<String, Object>();
+		map.put("title", "课程表");
+		map.put("info", "");
+		map.put("img", R.drawable.history);
+		list.add(map);
+		
+		
+		return list;
+	}
+}
